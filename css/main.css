@@ -9,24 +9,30 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.flex{
+.flex {
   display:flex;
 }
 
-.grid1{
+.border {
+  border-style: solid;
+  border-color: rgb(189, 189, 189);
+  border-width:0.1px;
+}
+
+.grid1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 50px;
 }
 
-.grid2{
+.grid2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap:30px 20px;
 }
 
 /*header styles*/
-.header{
+.header {
   justify-content: space-between;
   align-items: center;
   padding-top: 7px;
@@ -35,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 10px;
 }
 
-.header nav a{
+.header nav a {
   text-decoration: none;
   font-size: 13px;
   color: rgb(0, 0, 0);
@@ -44,13 +50,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 10px;
 }
 
-img{
+img {
   height: 30px;
   justify-content:center;
 }
 
 /*banner styles*/
-.banner1{
+.banner1 {
   height: 800px;
   flex-direction: column;
   align-items: center;
@@ -60,17 +66,13 @@ img{
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg");
 }
 
-/* .banner1 .banner_title{ */
-  /* filter: brightness(90%);  */
-/* } */
-
-.banner1 h3{
+.banner1 h3 {
   color:white;
   font-size: 70px;
   filter: brightness(90%); 
 }
 
-.banner1 p{
+.banner1 p {
   width:30%;
   color:white;
   font-size: 18px;
@@ -81,7 +83,7 @@ img{
   filter: brightness(90%); 
 }
 
-.banner1 nav a{
+.banner1 nav a {
   background-color: rgb(250, 67, 67) ;
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -138,9 +140,11 @@ For banner over lay add this class to your div
 }
 
 .banner2 h4{
-  background-color: rgb(219, 213, 210);
+  background-color: rgb(226, 218, 218);
   padding:5px;
-  padding-left:10px;
+  padding-left:20px;
+  font-size: 14px;
+  font-weight: bolder;
 }
 
 .banner2 p{
@@ -156,6 +160,7 @@ For banner over lay add this class to your div
 .item1{
   background-color: white;
   flex-direction: row;
+  height: 92px;
 }
 
 .item1 img{
@@ -237,7 +242,7 @@ background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzr
 
 .item2 h6{
   font-size: 11px;
-  background-color: rgb(219, 213, 210);
+  background-color: rgb(236, 232, 232);
   text-align: left;
   justify-content: space-around;
   padding-top:10px ;
