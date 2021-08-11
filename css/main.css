@@ -93,6 +93,7 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 5px;
+  box-shadow: 1px 4px 1px rgb(184, 60, 60);
   filter: brightness(90%); 
 }
 
@@ -263,6 +264,7 @@ background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzr
       padding-right: 60px;
       padding-top: 10px;
       padding-bottom: 10px;
+      box-shadow: 1px 4px 1px rgb(194, 66, 66);
       border-radius: 5px;
     }
 
