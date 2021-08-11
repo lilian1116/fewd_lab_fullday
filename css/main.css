@@ -16,13 +16,13 @@ h1, h2, h3, h4, h5, h6 {
 .grid1{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap:1px 50px;
+  gap: 10px 50px;
 }
 
 .grid2{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap:1px 10px;
+  gap:30px 20px;
 }
 
 /*header styles*/
@@ -45,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 
 img{
   height: 30px;
+  justify-content:center;
 }
 
 /*banner styles*/
@@ -52,6 +53,8 @@ img{
   height: 600px;
   flex-direction: column;
   align-items: center;
+  align-content:center;
+  justify-content: center;
   background-size: cover;
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg");
 }
@@ -62,30 +65,30 @@ img{
 
 .banner1 h3{
   color:white;
-  font-size: 50px;
+  font-size: 70px;
   filter: brightness(90%); 
 }
 
 .banner1 p{
-  width:60%;
+  width:30%;
   color:white;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   margin: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 30px;
   filter: brightness(90%); 
 }
 
 .banner1 nav a{
-  background-color: red ;
+  background-color: rgb(250, 67, 67) ;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 14px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 5px;
   filter: brightness(90%); 
 }
@@ -110,7 +113,6 @@ For banner over lay add this class to your div
 */
 .banner__container {
   position: relative;
-  height: 600px;
   flex-direction: column;
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg");
 }
@@ -127,12 +129,10 @@ For banner over lay add this class to your div
 
 /* banne2 styles */
 
-.banner2_____container{
-  border-width: 1px;
-}
-
 .banner2{
   padding:10px;
+  padding-top:40px;
+  padding-bottom: 40px;
   background-color: rgb(236, 230, 230);
 }
 
@@ -150,7 +150,6 @@ For banner over lay add this class to your div
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  grid-template-columns: 1fr 1fr;
 }
 
 .item1{
@@ -158,65 +157,160 @@ For banner over lay add this class to your div
   flex-direction: row;
 }
 
-img{
+.item1 img{
   padding: 10px;
+  height: 40px;
   align-items:center;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 /*banner 3 styles*/
+.item2{
+  flex-direction: column;
+}
+
+.banner3__container h4{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.banner3__container p{
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.banner3__container{
+  align-items: center;
+  flex-direction: column;
+  padding-bottom:20px;
+  padding-top:40px;
+}
 
 .pic3{
+  height:200px;
+  width: 310px;
 background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg") ;
- height:199px;
- width: 250px;
 }
 
 .pic4{
+  height:200px;
+  width: 310px;
   background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg") ;
-   height:199px;
-   width: 250px;
   }
 
-  .pic5{
+.pic5{
+  height:200px;
+  width: 310px;
     background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg") ;
-     height:199px;
-     width: 250px;
     }
-
-    .banner3 h3{
-      color:white;
+.banner3 h3{
+      color:rgb(255, 255, 255);
       font-size: 20px;
       text-align: center;
+      flex-direction: column;
+      align-items: center;
+      align-content:center;
+      justify-content: center;
       margin: 0px;
       padding-top: 10px;
       padding-bottom: 10px;
-      filter: brightness(90%);
+      filter: brightness(100%);
     }
 
-    .banner3 p{
+.piccont{
+  align-items: center;
+  justify-content: center;
+}
+
+.banner3 p{
       color:white;
-      font-size: 13px;
+      font-size: 11px;
+      font-weight: lighter;
       text-align: center;
       margin: 0px;
-      filter: brightness(90%);
+      filter: brightness(100%);
     }
 
+.item2 h6{
+  font-size: 11px;
+  background-color: rgb(219, 213, 210);
+  text-align: left;
+  justify-content: space-around;
+  padding-top:10px ;
+  padding-left: 10px;
+  padding-right: 10px;
+  height:50px;
+  width: 290px;
+  }
 
 
-
-
-    /*footer styles*/
-    .footer nav a{
-      background-color: red ;
+    /*banner4 styles*/
+.banner4 nav a{
+      background-color: rgb(250, 67, 67) ;
       text-decoration: none;
       color: rgb(255, 255, 255);
       font-size: 14px;
-      align-items: center;
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      border-radius: 5px; 
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 5px;
     }
+
+.banner4__container{
+  height:50px;
+      align-items: center;
+      align-content:center;
+      justify-content: center;
+      padding-bottom: 50px;
+    }
+
+
+ /*footer styles*/
+.footer h6{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+.footer1__container{
+  height:20px;
+  background-color:  rgb(49, 49, 49);
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+    padding-bottom: 10px;
+    flex-direction: column;
+  }
+
+.footer2__container{
+height:30px;
+background-color: rgb(49, 49, 49);
+  align-items: center;
+  align-content:center;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  flex-direction: column;
+}
+
+hr{
+  height: 2px;
+  margin: 0;
+  border: 0px;
+  background-color: grey;
+}
+
+.footerwrap{
+  padding: 30px;
+  margin: 0px;
+  background-color: rgb(49, 49, 49);
+}
