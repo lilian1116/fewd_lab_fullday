@@ -55,6 +55,23 @@ img {
   justify-content:center;
 }
 
+#bars {
+  display: none;
+  padding-right: 10px;
+}
+
+@media only screen and (max-width: 500px)
+{
+#bars {
+    display: block;
+    padding-right: 10px;
+  }
+
+.header nav a{
+  display: none;
+  }
+}
+
 /*banner styles*/
 .banner1 {
   height: 800px;
@@ -97,24 +114,6 @@ img {
   filter: brightness(90%); 
 }
 
-/*
-banner image
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg
-
-
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg
-
-*/
-/**
-For banner over lay add this class to your div
-<div class="banner__container">
-  <div>
-      <!-- content goes here -->
-  </div>
-</div>
-*/
 .banner__container {
   position: relative;
   flex-direction: column;
@@ -131,7 +130,16 @@ For banner over lay add this class to your div
   content: "";
 }
 
-/* banne2 styles */
+@media only screen and (max-width: 500px)
+{
+  .grid1{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px 50px;
+  }
+}
+
+/* banner2 styles */
 
 .banner2{
   padding:10px;
@@ -253,6 +261,14 @@ background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzr
   width: 290px;
   }
 
+  @media only screen and (max-width: 500px)
+  {
+  .grid2{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:30px 20px;
+}
+  }
 
     /*banner4 styles*/
 .banner4 nav a{
